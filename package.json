@@ -1,0 +1,12 @@
+{
+  "name": "darpan",
+  "private": true,
+  "description": "Darpan — an AI director that coaches first-time creators while they shoot reels.",
+  "scripts": {
+    "install:all": "npm --prefix app install && npm --prefix server install",
+    "dev:app": "npm --prefix app run dev",
+    "dev:server": "npm --prefix server run dev",
+    "build": "npm --prefix app run build && rm -rf server/public && cp -r app/dist server/public",
+    "start": "npm --prefix server start"
+  }
+}
